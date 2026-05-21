@@ -1,0 +1,544 @@
+<!DOCTYPE html><html lang="ko"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>간호학과 사용설명서 - ESG 영상 컷 구성</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+    padding: 0;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  header {
+    background: linear-gradient(135deg, #2c5282, #2b6cb0);
+    color: #fff;
+    padding: 28px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  header p {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  .notice {
+    background: #fff8e1;
+    border-left: 5px solid #f6ad55;
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .notice strong { color: #c05621; }
+  .license-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 24px;
+    font-size: 13px;
+  }
+  .license-box h3 {
+    color: #2b6cb0;
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+  .license-box ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+  .license-box a {
+    color: #3182ce;
+    word-break: break-all;
+  }
+  .cut {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .cut-number {
+    background: #2b6cb0;
+    color: #fff;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .cut img {
+    width: 100%;
+    display: block;
+  }
+  .cut-content {
+    padding: 14px 16px;
+  }
+  .subtitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    background: #edf2f7;
+    border-left: 4px solid #2b6cb0;
+    border-radius: 4px;
+  }
+  .comment {
+    font-size: 13.5px;
+    color: #4a5568;
+    background: #f7fafc;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px dashed #cbd5e0;
+  }
+  .comment::before {
+    content: "📌 촬영/편집 노트  ";
+    font-weight: bold;
+    color: #2b6cb0;
+  }
+  .section-divider {
+    text-align: center;
+    margin: 30px 0 20px;
+    padding: 16px;
+    background: #ed8936;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(237,137,54,0.3);
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #718096;
+    font-size: 12px;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>🏥 간호학과 사용설명서 - ESG</h1>
+    <p>영상 컷 구성안 (대전과학기술대학교 간호학과)</p>
+  </header>
+
+  <div class="notice">
+    <strong>⚠️ 공모전 관련 확인 필요</strong><br>
+    공모전에는 사용 가능하나, 우리가 영상을 제출하는 공모전 심사에서 <strong>"스톡영상 사용 가능 여부"</strong> 문의가 필요합니다.
+    (스톡이미지·AI 생성물 사용 가능한지, 아니면 "직접 찍은" 영상물만 이용해야 하는지 확인 필요)<br>
+    <em>※ 일단은 스톡이미지 사용 가능하다고 가정하고 컷별 구성을 설명합니다.</em>
+  </div>
+
+  <div class="license-box">
+    <h3>📄 스톡 영상 라이센스 정보</h3>
+    <p>스톡 영상은 <strong>magnific.com</strong>에서 프리미엄 라이센스 영상을 유료 결제 후 다운로드한 자산입니다.</p>
+    <p style="margin-top:6px;"><a href="https://www.magnific.com/ai/docs/licenses-attribution#nav-magnific-agreement" target="_blank">magnific.com 라이센스 규정 보기</a></p>
+    <h3 style="margin-top:12px;">Premium License 허용 범위</h3>
+    <ul>
+      <li>개인 및 상업적 프로젝트에 사용 가능</li>
+      <li>디지털·인쇄 매체 사용 가능 (웹·앱·영상·광고 등)</li>
+      <li>자산 수정 및 2차 창작물 제작 가능</li>
+      <li>전 세계 무제한 사용 가능</li>
+    </ul>
+  </div>
+
+  <!-- CUT 1 -->
+  <div class="cut">
+    <div class="cut-number">CUT 01 · 오프닝</div>
+    <img src="사용설명서.png" alt="간호학과 사용 설명서?!">
+    <div class="cut-content">
+      <div class="subtitle">"여러분, 저는 오늘 간호학과 사용설명서를 여러분들께 알려드릴 거예요."</div>
+      <div class="comment">스톡영상 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 2 -->
+  <div class="cut">
+    <div class="cut-number">CUT 02</div>
+    <img src="궁금아이.png" alt="궁금해하는 모습">
+    <div class="cut-content">
+      <div class="subtitle">"간호학과… 사용설명서…?"</div>
+      <div class="comment">스톡영상 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 3 -->
+  <div class="cut">
+    <div class="cut-number">CUT 03</div>
+    <img src="학교 전경.png" alt="학교 전경">
+    <div class="cut-content">
+      <div class="subtitle">"무슨 말인가 싶으실 텐데요. 일단 제 얘기를 좀 들어보세요."</div>
+      <div class="comment">과기대 전경 사용하면 좋을 것 같습니다. 건물들 나오게 영상 찍어주시면 알아서 편집하겠습니다. 그냥 찍으면서 돌아다니시면 빠르게 재생해도 좋을 것 같습니다.</div>
+    </div>
+  </div>
+
+  <!-- CUT 4 -->
+  <div class="cut">
+    <div class="cut-number">CUT 04</div>
+    <img src="간호학과 주사기.png" alt="주사기">
+    <div class="cut-content">
+      <div class="subtitle">"여러분 간호학과 하면 뭐가 떠오르시나요? 간호사?"</div>
+      <div class="comment">주사기 그대로 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 5 -->
+  <div class="cut">
+    <div class="cut-number">CUT 05</div>
+    <img src="실습실.png" alt="나이팅게일 선서 - 촛불">
+    <div class="cut-content">
+      <div class="subtitle">"그렇죠. 간호학과를 졸업하면 간호사가 되니까요."</div>
+      <div class="comment">촛불(우리학교 나이팅게일 선서 영상) — 스톡 또는 AI로 대체</div>
+    </div>
+  </div>
+
+  <!-- CUT 6 -->
+  <div class="cut">
+    <div class="cut-number">CUT 06</div>
+    <img src="간호사.png" alt="실습실 간호사">
+    <div class="cut-content">
+      <div class="subtitle">"그런데요, 사실 간호학과에서 여러분들이 하는 일은 정말 많아요."</div>
+      <div class="comment">실습실 촬영한 영상 사용. 일반적인 실습실 풍경 잠깐 들어가면 될 것 같습니다.</div>
+    </div>
+  </div>
+
+  <!-- CUT 7 -->
+  <div class="cut">
+    <div class="cut-number">CUT 07 · ESG 도입</div>
+    <img src="es.png" alt="ESG 지구">
+    <div class="cut-content">
+      <div class="subtitle">"그리고 제가 오늘 말씀드릴 ESG. 조금 생소하실 텐데요."</div>
+      <div class="comment">스톡영상 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 8 -->
+  <div class="cut">
+    <div class="cut-number">CUT 08</div>
+    <img src="esg.png" alt="ESG">
+    <div class="cut-content">
+      <div class="subtitle">"ESG에 대해서도 좀 설명을 드려볼게요. ESG. 알파벳 세 글자인데요, 별거 아니에요."</div>
+      <div class="comment">스톡영상 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 9 -->
+  <div class="cut">
+    <div class="cut-number">CUT 09</div>
+    <img src="e.png" alt="E - Environment">
+    <div class="cut-content">
+      <div class="subtitle">"E는 Environment, 환경. S는 Social, 사회."</div>
+      <div class="comment">스톡영상 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 10 -->
+  <div class="cut">
+    <div class="cut-number">CUT 10</div>
+    <img src="g.png" alt="G - Governance">
+    <div class="cut-content">
+      <div class="subtitle">"G는 Governance, 윤리적 책임."</div>
+      <div class="comment">스톡영상 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 11 -->
+  <div class="cut">
+    <div class="cut-number">CUT 11</div>
+    <img src="3.png" alt="ESG 세 가지">
+    <div class="cut-content">
+      <div class="subtitle">"쉽게 말해서 '환경도 생각하고, 이웃도 챙기고, 올바르게 행동하자.' 이 세 가지예요."</div>
+      <div class="comment">스톡영상 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 12 -->
+  <div class="cut">
+    <div class="cut-number">CUT 12</div>
+    <img src="f1.png" alt="기업 회의 모습">
+    <div class="cut-content">
+      <div class="subtitle">"보통 기업에서 많이 쓰는 말이긴 한데요, 사실 우리 간호학과 학생들은 이미 이걸 하고 있거든요. 모르고 있었을 뿐이에요."</div>
+      <div class="comment">스톡영상 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 13 -->
+  <div class="cut">
+    <div class="cut-number">CUT 13</div>
+    <img src="f2.png" alt="실습 도구">
+    <div class="cut-content">
+      <div class="subtitle">"하나씩 알려드릴게요."</div>
+      <div class="comment">실습실 도구 클로즈업 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 14 -->
+  <div class="cut">
+    <div class="cut-number">CUT 14 · E (환경)</div>
+    <img src="f3.png" alt="학교 전경 항공샷">
+    <div class="cut-content">
+      <div class="subtitle">"먼저 E, 환경이요."</div>
+      <div class="comment">우리학교 찍은 영상, 나무나 숲 나온 영상도 좋습니다. 없으면 스톡이미지 사용하겠습니다.</div>
+    </div>
+  </div>
+
+  <!-- CUT 15 -->
+  <div class="cut">
+    <div class="cut-number">CUT 15</div>
+    <img src="f4.png" alt="학교 시계탑">
+    <div class="cut-content">
+      <div class="subtitle">"간호학과 실습실 가보신 분들은 아실 거예요."</div>
+      <div class="comment">학교 랜드마크(시계탑) 항공샷 활용</div>
+    </div>
+  </div>
+
+  <!-- CUT 16 -->
+  <div class="cut">
+    <div class="cut-number">CUT 16</div>
+    <img src="f5.png" alt="의료 폐기물">
+    <div class="cut-content">
+      <div class="subtitle">"일회용 장갑, 소독솜 포장지, 주사기 캡…"</div>
+      <div class="comment">여기부터 실습실에 있는 쓰레기통 찍어주세요. 사진·영상 많이많이!</div>
+    </div>
+  </div>
+
+  <!-- CUT 17 -->
+  <div class="cut">
+    <div class="cut-number">CUT 17</div>
+    <img src="f6.png" alt="장갑 낀 손">
+    <div class="cut-content">
+      <div class="subtitle">"실습 한 번 하고 나면 쓰레기가 정말 많이 나오거든요. 그래서 우리는 의료 폐기물이랑 일반 쓰레기를 구분해서 버리는 걸 기본으로 배워요."</div>
+      <div class="comment">스톡이미지처럼 장갑 벗는 영상, 폐기물 버리는 영상 다양하게.</div>
+    </div>
+  </div>
+
+  <!-- CUT 18 -->
+  <div class="cut">
+    <div class="cut-number">CUT 18</div>
+    <img src="f7.png" alt="장갑 벗는 모습">
+    <div class="cut-content">
+      <div class="subtitle">"감염성 폐기물은 따로, 재활용 가능한 건 따로."</div>
+      <div class="comment">감염성 / 재활용 분리하는 모습 강조</div>
+    </div>
+  </div>
+
+  <!-- CUT 19 -->
+  <div class="cut">
+    <div class="cut-number">CUT 19</div>
+    <img src="f8.png" alt="가운 입는 모습">
+    <div class="cut-content">
+      <div class="subtitle">"이게 그냥 귀찮은 규칙이 아니라, 환경을 지키는 첫 번째 실천이에요."</div>
+      <div class="comment">스톡이미지처럼 가운 입거나 벗는 영상 넣으면 좋을 것 같습니다.</div>
+    </div>
+  </div>
+
+  <!-- CUT 20 -->
+  <div class="cut">
+    <div class="cut-number">CUT 20</div>
+    <img src="f9.png" alt="포장 도구">
+    <div class="cut-content">
+      <div class="subtitle">"거기에 텀블러 하나 들고 다니면? 완벽하죠."</div>
+      <div class="comment">텀블러 말고 다른 것 넣어도 됩니다. 굳이 자막이랑 영상이 딱딱 맞을 필요는 없습니다. 대사를 바꿔도 됩니다.</div>
+    </div>
+  </div>
+
+  <!-- CUT 21 -->
+  <div class="cut">
+    <div class="cut-number">CUT 21</div>
+    <img src="f10.png" alt="차트 작성">
+    <div class="cut-content">
+      <div class="subtitle">"이렇게 우리가 실습실에서 당연하게 하고 있는 것들, 이게 바로 ESG의 E예요."</div>
+      <div class="comment">차트 들고 있는 모습, 실습실 문을 열고 들어가는 모습 등등</div>
+    </div>
+  </div>
+
+  <!-- CUT 22 -->
+  <div class="cut">
+    <div class="cut-number">CUT 22 · S (사회)</div>
+    <img src="f11.png" alt="주사 놓는 손">
+    <div class="cut-content">
+      <div class="subtitle">"다음은 S, 사회."</div>
+      <div class="comment">스톡이미지 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 23 -->
+  <div class="cut">
+    <div class="cut-number">CUT 23</div>
+    <img src="f12.png" alt="환자 돌봄 1">
+    <div class="cut-content">
+      <div class="subtitle">"이건 사실 간호학과가 제일 잘하는 거예요."</div>
+      <div class="comment">환자 돌봄 장면 스톡영상 사용</div>
+    </div>
+  </div>
+
+  <!-- CUT 24 -->
+  <div class="cut">
+    <div class="cut-number">CUT 24</div>
+    <img src="f13.png" alt="환자 돌봄 2">
+    <div class="cut-content">
+      <div class="subtitle">"간호학의 핵심이 뭐냐면요, '돌봄'이거든요."</div>
+      <div class="comment">돌봄 장면 — 따뜻한 분위기 강조</div>
+    </div>
+  </div>
+
+  <!-- CUT 25 -->
+  <div class="cut">
+    <div class="cut-number">CUT 25</div>
+    <img src="f14.png" alt="환자 돌봄 3">
+    <div class="cut-content">
+      <div class="subtitle">"사람을 살피고, 아픈 사람 곁에 있어주는 거요."</div>
+      <div class="comment">환자 곁을 지키는 모습 스톡영상 활용</div>
+    </div>
+  </div>
+
+  <!-- 추가 분량 필요 영역 -->
+  <div class="section-divider">
+    🎬 여기서부터 추가 영상 분량 필요
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 26 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"우리 학과 학생들, 지역사회 봉사활동 나가서 어르신들 혈압도 재드리고, 건강 상담도 해드리잖아요."</div>
+      <div class="comment">실습실 바이탈사인 재는 모습 직접 촬영 필요</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 27 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"학교 안에서도 친구들한테 심폐소생술 알려주고,"</div>
+      <div class="comment">칠판이나 교탁에서 설명하는 모습 (학생들은 AI로 편집해서 넣어보겠습니다)</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 28 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"올바른 손씻기 방법도 알려주고요."</div>
+      <div class="comment">손씻기 방법 (여러 가지, 손소독 비누 등)</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 29 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"이렇게 내가 배운 걸 주변 사람들과 나누는 것, 이게 바로 ESG의 S예요."</div>
+      <div class="comment">S 로고 스톡이미지 사용</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 30 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"나누면 두 배가 되는 거, 간호학과 학생들은 이미 알고 있잖아요."</div>
+      <div class="comment">학생들이 함께하는 모습</div>
+    </div>
+  </div>
+
+  <div class="section-divider">
+    📚 G (Governance) 파트
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 31 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"마지막으로 G, 윤리적 책임이에요."</div>
+      <div class="comment">간호학과 책이나 실습실 용품 클로즈업</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 32 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"이건 좀 진지한 얘기인데요. 우리가 다루는 건 사람의 몸이고, 사람의 생명이에요."</div>
+      <div class="comment">실습실 인체 모형 사진/클로즈업, 옆으로 지나가면서 찍으면 알아서 편집하겠습니다.</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 33 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"그래서 간호학과에서는 생명 윤리, 환자의 개인정보 보호, 정직한 기록 작성 같은 걸 정말 중요하게 배워요."</div>
+      <div class="comment">스톡이미지 사용</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 34 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"실습 기록 하나 쓸 때도 있는 그대로 정확하게 써야 하고, 환자의 비밀은 절대 함부로 말하면 안 되죠."</div>
+      <div class="comment">"쉿" 하는 스톡이미지 활용</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 35 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"이런 게 왜 중요하냐면, 나중에 우리가 현장에 나갔을 때 환자가 우리를 믿고 맡길 수 있으려면, 지금부터 그 신뢰를 쌓아야 하거든요."</div>
+      <div class="comment">환자에게 말 거는 모습</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 36 · 추가 촬영 필요</div>
+    <div class="cut-content">
+      <div class="subtitle">"이게 바로 ESG의 G예요."</div>
+      <div class="comment">스톡 G 이미지 사용</div>
+    </div>
+  </div>
+
+  <div class="section-divider">
+    🎯 마무리 / 정리 파트
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 37 · 정리</div>
+    <div class="cut-content">
+      <div class="subtitle">"자, 정리해 볼게요. 실습실에서 폐기물 똑바로 분리하는 것, E. 배운 걸 지역사회와 나누는 것, S. 정직하고 윤리적으로 행동하는 것, G."</div>
+      <div class="comment">앞서 들어갔던 장면들 편집해서 재사용 또는 스톡이미지</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 38 · 학교 전경</div>
+    <div class="cut-content">
+      <div class="subtitle">"거창한 게 아니에요. 우리가 간호학과에서 매일 하고 있는 것들이 이미 ESG였어요. 대전과학기술대학교 간호학과."</div>
+      <div class="comment">학교 전경, 스톡이미지 활용</div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <div class="cut-number">CUT 39 · 엔딩</div>
+    <div class="cut-content">
+      <div class="subtitle">"따뜻하게 돌보고, 올바르게 행동하는 사람들이 모인 곳. 이게 바로 간호학과 사용설명서입니다."</div>
+      <div class="comment">마지막 — 우리 대학 로고, ESG, 사용설명서 AI로 깔끔하게 편집. 마무리.</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>📹 위 컷 편집 보시고 참고해서 영상 찍어주시면 될 것 같습니다!</p>
+    <p style="margin-top:6px;">대전과학기술대학교 간호학과 · ESG 영상 컷 구성안</p>
+  </footer>
+
+</div>
+
+
+
+</body></html>
